@@ -1,15 +1,12 @@
 # CW2DTable
 
-[![CI Status](http://img.shields.io/travis/Millionaryearl/CW2DTable.svg?style=flat)](https://travis-ci.org/Millionaryearl/CW2DTable)
-[![Version](https://img.shields.io/cocoapods/v/CW2DTable.svg?style=flat)](http://cocoadocs.org/docsets/CW2DTable)
-[![License](https://img.shields.io/cocoapods/l/CW2DTable.svg?style=flat)](http://cocoadocs.org/docsets/CW2DTable)
-[![Platform](https://img.shields.io/cocoapods/p/CW2DTable.svg?style=flat)](http://cocoadocs.org/docsets/CW2DTable)
+It's inspired by the stupid requirement to display commercial statistic table. User could customize the data source in CW2DTableVC.m file - refreshSrchRlt method. A specific demonstration of the data structure could be found there.
+
 
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
 
 ## Installation
 
@@ -24,5 +21,6 @@ Millionaryearl, dukeweichen@gmail.com
 
 ## License
 
-CW2DTable is available under the MIT license. See the LICENSE file for more info.
+CW2DTable is available under the MIT license, though author personally perfer to WTFPL. See the LICENSE file for more info.
+
 

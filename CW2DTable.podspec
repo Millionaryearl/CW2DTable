@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.version          = "1.0.0"
   s.summary          = "CW2DTable is a self-defined UICollectionViewController to simulate commerial statistic tables."
   s.description      = <<-DESC
-                       "CW2DTable is a self-defined UICollectionViewController to simulate commerial statistic tables. user could customize the data source in CW2DTableVC.m file - refreshSrchRlt method. An detailed demonstration for the data structure could be found there."
+                       "CW2DTable is a self-defined UICollectionViewController to simulate commerial statistic tables. user could customize the data source in CW2DTableVC.m file - refreshSrchRlt method. A detailed demonstration for the data structure could be found there."
                         
                        * Markdown format.
                        * Don't worry about the indent, we strip it!
