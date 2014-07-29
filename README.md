@@ -1,7 +1,9 @@
 # CW2DTable
 
-It's inspired by the stupid requirement to display commercial statistic table. User could customize the data source in CW2DTableVC.m file - refreshSrchRlt method. A specific demonstration of the data structure could be found there.
+It's inspired by the stupid requirement to display commercial statistic table. User could customize the data source in `CW2DTableVC.m file` - `refreshSrchRlt` method. A specific demonstration of the data structure could be found there.
 
+## Demo
+![BackgroundImage](https://raw2.github.com/Millionaryearl/CW2DTable/master/CW2DTable.gif)
 
 ## Usage
 
