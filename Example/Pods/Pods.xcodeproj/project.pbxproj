@@ -24,6 +24,12 @@
 		262731DF5C4C43C08972316B /* EXPBlockDefinedMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D536F18B8DF46A58F748F0C /* EXPBlockDefinedMatcher.m */; };
 		26D7979F8F8E43D9B20CBDF1 /* Pods-CW2DTable-CW2DTable-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FCE67DD49174F1A868CB607 /* Pods-CW2DTable-CW2DTable-dummy.m */; };
 		28ABAB1A2A2C4E53A0131182 /* EXPMatchers+raiseWithReason.m in Sources */ = {isa = PBXBuildFile; fileRef = E2506F1D708344CFA56F1F64 /* EXPMatchers+raiseWithReason.m */; };
+		28C371A81A5CC2CF00F6F8B4 /* CW2DTableLayoutStyle2.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C3719D1A5CC2CF00F6F8B4 /* CW2DTableLayoutStyle2.m */; };
+		28C371A91A5CC2CF00F6F8B4 /* CW2DTabeLayoutStyle3.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C3719F1A5CC2CF00F6F8B4 /* CW2DTabeLayoutStyle3.m */; };
+		28C371AA1A5CC2CF00F6F8B4 /* CW2DTableLayoutStyle4.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C371A11A5CC2CF00F6F8B4 /* CW2DTableLayoutStyle4.m */; };
+		28C371AB1A5CC2CF00F6F8B4 /* CW2DTableVC2.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C371A31A5CC2CF00F6F8B4 /* CW2DTableVC2.m */; };
+		28C371AC1A5CC2CF00F6F8B4 /* CW2DTableVC3.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C371A51A5CC2CF00F6F8B4 /* CW2DTableVC3.m */; };
+		28C371AD1A5CC2CF00F6F8B4 /* CW2DTableVC4.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C371A71A5CC2CF00F6F8B4 /* CW2DTableVC4.m */; };
 		28D3317A198767FB00177AFA /* CW2DTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D33175198767FB00177AFA /* CW2DTableCell.m */; };
 		28D3317B198767FB00177AFA /* CW2DTableLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D33177198767FB00177AFA /* CW2DTableLayout.m */; };
 		28D3317C198767FB00177AFA /* CW2DTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D33179198767FB00177AFA /* CW2DTableVC.m */; };
@@ -244,6 +250,18 @@
 		26540DC5E7E944B2BAE0DA2D /* SPTExample.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTExample.m; path = src/SPTExample.m; sourceTree = "<group>"; };
 		2702DB96A4054E0A92920742 /* Pods-CW2DTable-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CW2DTable-environment.h"; sourceTree = "<group>"; };
 		273A6DF1BB904D02AEB7AB9E /* EXPMatchers+beIdenticalTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beIdenticalTo.h"; path = "src/matchers/EXPMatchers+beIdenticalTo.h"; sourceTree = "<group>"; };
+		28C3719C1A5CC2CF00F6F8B4 /* CW2DTableLayoutStyle2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CW2DTableLayoutStyle2.h; sourceTree = "<group>"; };
+		28C3719D1A5CC2CF00F6F8B4 /* CW2DTableLayoutStyle2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CW2DTableLayoutStyle2.m; sourceTree = "<group>"; };
+		28C3719E1A5CC2CF00F6F8B4 /* CW2DTabeLayoutStyle3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CW2DTabeLayoutStyle3.h; sourceTree = "<group>"; };
+		28C3719F1A5CC2CF00F6F8B4 /* CW2DTabeLayoutStyle3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CW2DTabeLayoutStyle3.m; sourceTree = "<group>"; };
+		28C371A01A5CC2CF00F6F8B4 /* CW2DTableLayoutStyle4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CW2DTableLayoutStyle4.h; sourceTree = "<group>"; };
+		28C371A11A5CC2CF00F6F8B4 /* CW2DTableLayoutStyle4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CW2DTableLayoutStyle4.m; sourceTree = "<group>"; };
+		28C371A21A5CC2CF00F6F8B4 /* CW2DTableVC2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CW2DTableVC2.h; sourceTree = "<group>"; };
+		28C371A31A5CC2CF00F6F8B4 /* CW2DTableVC2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CW2DTableVC2.m; sourceTree = "<group>"; };
+		28C371A41A5CC2CF00F6F8B4 /* CW2DTableVC3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CW2DTableVC3.h; sourceTree = "<group>"; };
+		28C371A51A5CC2CF00F6F8B4 /* CW2DTableVC3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CW2DTableVC3.m; sourceTree = "<group>"; };
+		28C371A61A5CC2CF00F6F8B4 /* CW2DTableVC4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CW2DTableVC4.h; sourceTree = "<group>"; };
+		28C371A71A5CC2CF00F6F8B4 /* CW2DTableVC4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CW2DTableVC4.m; sourceTree = "<group>"; };
 		28D33174198767FB00177AFA /* CW2DTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CW2DTableCell.h; path = Pod/Classes/CW2DTableCell.h; sourceTree = "<group>"; };
 		28D33175198767FB00177AFA /* CW2DTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CW2DTableCell.m; path = Pod/Classes/CW2DTableCell.m; sourceTree = "<group>"; };
 		28D33176198767FB00177AFA /* CW2DTableLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CW2DTableLayout.h; path = Pod/Classes/CW2DTableLayout.h; sourceTree = "<group>"; };
@@ -589,6 +607,18 @@
 				28D33177198767FB00177AFA /* CW2DTableLayout.m */,
 				28D33178198767FB00177AFA /* CW2DTableVC.h */,
 				28D33179198767FB00177AFA /* CW2DTableVC.m */,
+				28C3719C1A5CC2CF00F6F8B4 /* CW2DTableLayoutStyle2.h */,
+				28C3719D1A5CC2CF00F6F8B4 /* CW2DTableLayoutStyle2.m */,
+				28C3719E1A5CC2CF00F6F8B4 /* CW2DTabeLayoutStyle3.h */,
+				28C3719F1A5CC2CF00F6F8B4 /* CW2DTabeLayoutStyle3.m */,
+				28C371A01A5CC2CF00F6F8B4 /* CW2DTableLayoutStyle4.h */,
+				28C371A11A5CC2CF00F6F8B4 /* CW2DTableLayoutStyle4.m */,
+				28C371A21A5CC2CF00F6F8B4 /* CW2DTableVC2.h */,
+				28C371A31A5CC2CF00F6F8B4 /* CW2DTableVC2.m */,
+				28C371A41A5CC2CF00F6F8B4 /* CW2DTableVC3.h */,
+				28C371A51A5CC2CF00F6F8B4 /* CW2DTableVC3.m */,
+				28C371A61A5CC2CF00F6F8B4 /* CW2DTableVC4.h */,
+				28C371A71A5CC2CF00F6F8B4 /* CW2DTableVC4.m */,
 				A76F6A411CFF42C390966F42 /* Support Files */,
 			);
 			name = CW2DTable;
@@ -1086,10 +1116,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28C371AD1A5CC2CF00F6F8B4 /* CW2DTableVC4.m in Sources */,
 				28D3317A198767FB00177AFA /* CW2DTableCell.m in Sources */,
 				28D3317C198767FB00177AFA /* CW2DTableVC.m in Sources */,
 				28D3317B198767FB00177AFA /* CW2DTableLayout.m in Sources */,
+				28C371A81A5CC2CF00F6F8B4 /* CW2DTableLayoutStyle2.m in Sources */,
+				28C371AB1A5CC2CF00F6F8B4 /* CW2DTableVC2.m in Sources */,
 				38DD7C811CED4D748B80F5B0 /* Pods-CW2DTable-dummy.m in Sources */,
+				28C371A91A5CC2CF00F6F8B4 /* CW2DTabeLayoutStyle3.m in Sources */,
+				28C371AC1A5CC2CF00F6F8B4 /* CW2DTableVC3.m in Sources */,
+				28C371AA1A5CC2CF00F6F8B4 /* CW2DTableLayoutStyle4.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

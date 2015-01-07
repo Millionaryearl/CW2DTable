@@ -1,22 +1,21 @@
 //
-//  TwoDStatisticLayout.m
-//  SmartOrder-V2
+//  CW2DTableLayoutStyle4.m
+//  Pods
 //
-//  Created by millionaryearl on 14-5-9.
-//  Copyright (c) 2014年 Shanghai AgileMobi Co., Ltd. All rights reserved.
+//  Created by millionaryearl on 14/12/4.
+//
 //
 
-#import "CW2DTableLayout.h"
+#import "CW2DTableLayoutStyle4.h"
 
-@interface CW2DTableLayout()
+@interface CW2DTableLayoutStyle4()
 
 @property (strong, nonatomic)NSMutableArray *itemAttributes;
 @property (assign, nonatomic)CGSize calculatedContentSize;
-
 @end
 
-@implementation CW2DTableLayout
 
+@implementation CW2DTableLayoutStyle4
 
 -(id)init{
     self = [super init];
@@ -43,7 +42,7 @@
     CGFloat contentHeight = 0.0;                                                //
     
     //the number of columns in each row, this value should be dynamically changed accroding to row index
-//    CGFloat numOfColumnsInRow =10;
+    //    CGFloat numOfColumnsInRow =10;
     
     //iterate through all items to calculate the UICollectionViewLayoutAttributes for each cell
     
@@ -55,13 +54,13 @@
         //do relavent change in controller file
         //!!!!!!!!!!!!!!!!!!!!!!!!!
         NSUInteger numOfItemsInRow = [self.collectionView numberOfItemsInSection:sectionI];
-       
+        
         for (NSUInteger rowI = 0; rowI < numOfItemsInRow; rowI++) {
             CGSize itemSize = [self size4ItemWithSectionPara:sectionI RoWPara:rowI];
             
-            if (itemSize.height >rowHeightRecd) {
+//            if (itemSize.height >rowHeightRecd) {
                 rowHeightRecd = itemSize.height;
-            }
+//            }
             
             //create the actual UICollectionViewLayoutAttributes and addit to _itemAttributes. THis will be used later in LayeroutAttributesForItemAtIndexPath;
             NSIndexPath *indexPath = [NSIndexPath indexPathForItem:rowI inSection:sectionI];
@@ -95,7 +94,7 @@
         
         //record the calculated size
         _calculatedContentSize = CGSizeMake(contentWidth, contentHeight);
-
+        
     }
 }
 
@@ -131,16 +130,16 @@
         origin.x = MAX(
                        MAX(
                            contentOffset.x +cv.contentInset.left,
-                          (CGRectGetMinX(firstObjectAttrs.frame)-headerWidth)
-                          ),
-                      (CGRectGetMaxX(lastObjectAttrs.frame)-headerWidth)
-                      );
-        if ( layoutAttributes.indexPath.section <2){
+                           (CGRectGetMinX(firstObjectAttrs.frame)-headerWidth)
+                           ),
+                       (CGRectGetMaxX(lastObjectAttrs.frame)-headerWidth)
+                       );
+        if ( layoutAttributes.indexPath.section <1){
             layoutAttributes.zIndex = 2048;
         }else{
             layoutAttributes.zIndex = 1024;
         }
-
+        
         layoutAttributes.frame = (CGRect){
             .origin = origin,
             .size = layoutAttributes.frame.size
@@ -164,45 +163,10 @@
         origin.y = MAX(
                        MAX(
                            contentOffset.y +cv.contentInset.top,
-                          (CGRectGetMinY(firstObjectAttrs.frame)-headerHeight)
+                           (CGRectGetMinY(firstObjectAttrs.frame)-headerHeight)
                            ),
                        (CGRectGetMaxY(lastObjectAttrs.frame)-headerHeight)
                        );
-        if ( layoutAttributes.indexPath.row == 0){
-            layoutAttributes.zIndex = 2048;
-        }else{
-            layoutAttributes.zIndex = 1024;
-        }
-        layoutAttributes.frame = (CGRect){
-            .origin = origin,
-            .size = layoutAttributes.frame.size
-        };
-        
-    }
-    
-    for (UICollectionViewLayoutAttributes *layoutAttributes in _itemAttributes[1]){
-        NSIndexPath *firstObjectIndexPath = [NSIndexPath indexPathForItem:0 inSection:1];
-        NSIndexPath *lastObjectIndexPath = [NSIndexPath indexPathForItem:[_itemAttributes[1] count]-1 inSection:1];
-        
-        UICollectionViewLayoutAttributes *firstObjectAttrs;
-        UICollectionViewLayoutAttributes *lastObjectAttrs;
-        
-        firstObjectAttrs = [self layoutAttributesForItemAtIndexPath:firstObjectIndexPath];
-        lastObjectAttrs = [self layoutAttributesForItemAtIndexPath:lastObjectIndexPath];
-        
-        UICollectionViewLayoutAttributes *mainHeader =_itemAttributes[0][0];
-        CGFloat headerHeight = CGRectGetHeight(layoutAttributes.frame);
-        CGRect frameWithEdgeInsets = UIEdgeInsetsInsetRect(layoutAttributes.frame, cv.contentInset);
-        CGPoint origin = frameWithEdgeInsets.origin;
-        
-        origin.y = MAX(
-                       MAX(
-                           CGRectGetHeight(mainHeader.frame)+contentOffset.y +cv.contentInset.top +_itemOffSet.horizontal,
-                           CGRectGetHeight(mainHeader.frame)+(CGRectGetMinY(firstObjectAttrs.frame)-headerHeight)
-                           ),
-                       (CGRectGetMaxY(lastObjectAttrs.frame)-headerHeight)
-                       );
-        
         if ( layoutAttributes.indexPath.row == 0){
             layoutAttributes.zIndex = 2048;
         }else{
@@ -234,27 +198,13 @@
 -(CGSize)size4ItemWithSectionPara:(NSInteger)sectionI RoWPara:(NSInteger)rowI{
     //resize cell to corresponding size
     CGSize rltSize;
-    switch (sectionI) {
-        case 0:
-            //size for section 1 - column header
-            rltSize = CGSizeMake(240, 44);
-            break;
-            
-        default:
-            //size for section 2 - colum subheader
-            rltSize = CGSizeMake(120, 44);
-            break;
+    CGFloat x=120.0,y=44.0;
+    
+    if (sectionI ==0 ) {
+        y=264;
     }
-    switch (rowI) {
-        case 0:
-            //size for section 3 - row
-            rltSize = CGSizeMake(180, 44);
-            break;
-            
-        default:
-            break;
-    }
+    
+    rltSize = CGSizeMake(x, y);
     return rltSize;
 }
-
 @end
