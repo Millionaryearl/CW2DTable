@@ -3,11 +3,12 @@
 It's inspired by the stupid requirement to display commercial statistic table. User could customize the data source in `CW2DTableVC.m file` - `refreshSrchRlt` method. A specific demonstration of the data structure could be found there.
 
 ## Demo
-![BackgroundImage](https://raw2.github.com/Millionaryearl/raw/master/CW2DTable/CW2DTable.gif)
+![BackgroundImage](https://raw.githubusercontent.com/Millionaryearl/CW2DTable/master/CW2DTable.gif)
 
-![image](https://github.com/Millionaryearl/raw/master/CWFormStyle2.png)
-![image](https://github.com/Millionaryearl/raw/master/CWFormStyle3.png)
-![image](https://github.com/Millionaryearl/raw/master/CWFormStyle4.png)
+![image](https://raw.githubusercontent.com/Millionaryearl/CW2DTable/master/CWFormStyle2.png)
+![image](https://raw.githubusercontent.com/Millionaryearl/CW2DTable/master/CWFormStyle3.png)
+![image](https://raw.githubusercontent.com/Millionaryearl/CW2DTable/master/CWFormStyle4.png)
+
 
 ## Usage
 
