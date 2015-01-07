@@ -5,9 +5,9 @@ It's inspired by the stupid requirement to display commercial statistic table. U
 ## Demo
 ![BackgroundImage](https://raw2.github.com/Millionaryearl/raw/master/CW2DTable/CW2DTable.gif)
 
-![image](https://github.com/Millionaryearl/raw/master/CWFormStyle2.jpg)
-![image](https://github.com/Millionaryearl/raw/master/CWFormStyle3.jpg)
-![image](https://github.com/Millionaryearl/raw/master/CWFormStyle4.jpg)
+![image](https://github.com/Millionaryearl/raw/master/CWFormStyle2.png)
+![image](https://github.com/Millionaryearl/raw/master/CWFormStyle3.png)
+![image](https://github.com/Millionaryearl/raw/master/CWFormStyle4.png)
 
 ## Usage
 
